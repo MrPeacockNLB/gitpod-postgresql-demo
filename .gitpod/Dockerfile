@@ -17,7 +17,7 @@ RUN set -ex; \
     sudo chown gitpod:gitpod /var/log/nginx
 
 # copy NginX config
-COPY gitpod/files/nginx.conf /etc/nginx/nginx.conf
+COPY .gitpod/files/nginx.conf /etc/nginx/nginx.conf
 
 USER root
 
